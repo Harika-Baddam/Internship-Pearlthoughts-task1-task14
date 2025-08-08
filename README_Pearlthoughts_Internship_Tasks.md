@@ -45,14 +45,13 @@
   - ECS cluster, task, service (Fargate)
   - ALB + Security Groups
 - Public URL exposes Strapi app.
--Strapi admin pannel 503 error
 
 ### **Task 7:** ECS Fargate + GitHub Actions CI/CD (Fully Automated)
 - Created GitHub workflow to:
   - Build, tag, and push Docker image
   - Update ECS Task Definition with new image
   - Trigger ECS deployment via Terraform
-  - ECS Deployment failed via terraform using GitHub Actions.
+
 
 ### **Task 8:** Add CloudWatch Monitoring
 - Created CloudWatch log group using Terraform
@@ -60,18 +59,15 @@
 - Enabled metrics for:
   - CPU, Memory, Network, Task Count
 - Configured dashboards and alarms (optional)
-Strapi-admin pannel not opened strapi-cluster stopped automatically after 5 minuts.
 
 ### **Task 9:** Use AWS Fargate Spot Instances
 - Updated Fargate service to use `FARGATE_SPOT` to save costs
-- Strapi-not opened due to task running stoping after 5 minuts
 
 ### **Task 10:** Strapi Admin Configuration
 - Logged into deployed Strapi
 - Created Content Types and API endpoints
 - Configured roles and permissions
 - Verified public API access via ALB URL
--Deployment is successfull but by using ALB-DNS strapi-admin pannel not opened 503 error
 
 ### **Task 11:** Blue/Green Deployment on ECS
 - Created:
@@ -80,14 +76,12 @@ Strapi-admin pannel not opened strapi-cluster stopped automatically after 5 minu
   - ECS Task Definition (dynamic image)
   - CodeDeploy App + Deployment Group (Canary/AllAtOnce)
 - Setup rollback, health checks, and dynamic switching
-- by using ALB-DNS strapi not opened when checking my logs strapi stopping after 5 minuts
 ### **Task 12:** GitHub Actions to Automate Blue/Green Deployment
 - GitHub workflow handles:
   - Docker image push with commit SHA tag
   - ECS Task Definition update with new tag
   - Trigger CodeDeploy deployment
   - Optional: monitor and rollback
-  - by using github deployment success full but codedeploy trigger is failed due to asspec yml file.
 
 ### **Task 13:** Docker Swarm CronJob Research
 - Created a detailed research document with:
