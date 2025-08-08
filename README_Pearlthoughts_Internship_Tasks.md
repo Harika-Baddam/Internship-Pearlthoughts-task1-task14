@@ -52,6 +52,7 @@
   - Build, tag, and push Docker image
   - Update ECS Task Definition with new image
   - Trigger ECS deployment via Terraform
+  - ECS Deployment failed via terraform using GitHub Actions.
 
 ### **Task 8:** Add CloudWatch Monitoring
 - Created CloudWatch log group using Terraform
